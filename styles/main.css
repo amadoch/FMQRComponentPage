@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /*Primary*/
+    --primary: hsl(0, 0%, 100%);
+    --primary-300: hsl(212, 45%, 89%);
+    --primary-500: hsl(216, 15%, 48%);
+    --primary-900: hsl(218, 44%, 22%);
+}
+
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-300);
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 22rem;
+    grid-template-rows: repeat(auto-fill, minmax(14rem, 1fr));
+
+    justify-content: center;
+    margin: 8vh;
+}
+
+.outfit-regular {
+    font-family: Outfit, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-500);
+}
+
+.outfit-bold {
+    font-family: Outfit, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--primary-900);
+}
+
+.rounded {
+    border-radius: 16px;
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.qr-box {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 5%; 
+}
+
+.qr-picture {
+    width: 100%;
+}
+
+.action-text {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.guide-text {
+    font-size: 1rem;
+    text-align: center;
+}
